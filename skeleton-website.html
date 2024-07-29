@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>First website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: 'Courier New', monospace;
+        background-color: #E6E6FA; 
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    .content {
+        max-width: 1300px;
+        margin: auto;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .half {
+        flex: 50%;
+        box-sizing: border-box;
+    }
+    .black {
+        background-color: #000;
+        color: #fff;
+        padding: 64px 16px;
+        text-align: center;
+    }
+    .blue-grey {
+        background-color: #b079d1; 
+        color: #fff;
+        padding: 64px 16px;
+        text-align: center;
+    }
+    .light-grey {
+        background-color: #d3d3d3;
+        color: #975293;
+        padding: 64px 16px;
+        text-align: center;
+    }
+    .dark-grey {
+        background-color: #694566;
+        color: #fff;
+        padding: 64px 16px;
+        text-align: center;
+    }
+    .indigo {
+        background-color: #9370DB; 
+        color: #fff;
+        padding: 64px 16px;
+        text-align: center;
+    }
+    .teal {
+        background-color: #aa90ee; 
+        color: #fff;
+        padding: 64px 16px;
+        text-align: center;
+    }
+    .button {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        font-family: 'Courier New', monospace;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .button:hover {
+        background-color: #e577da;
+    }
+    .hover-blue-grey:hover {
+        background-color: #45055e;
+    }
+    .hover-teal:hover {
+        background-color: #750999;
+    }
+    .hover-dark-grey:hover {
+        background-color: #9e23c7;
+    }
+    .hover-brown:hover {
+        background-color: #a52a95;
+    }
+    .container {
+        padding: 16px;
+    }
+    .responsive {
+        overflow-x: auto;
+    }
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+    }
+    .table th, .table td {
+        padding: 8px 16px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    .table th {
+        background-color: #9370DB; /* Adjusting shades */
+        color: white;
+    }
+    .white {
+        background-color: #fff;
+        color: #333;
+    }
+    .hide-small {
+        display: none;
+    }
+    @media (min-width: 601px) {
+        .hide-small {
+            display: block;
+        }
+    }
+    .opacity {
+        opacity: 0.75;
+    }
+    form .section {
+        margin-bottom: 16px;
+    }
+    h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+<body class="content">
+
+<!-- First Grid: Logo(maybe) & About -->
+<div class="row">
+  <div class="half black">
+    <div>
+      <h1>Welcome to Zina's World</h1>
+    </div>
+    <div>
+      <a href="#" class="button hover-blue-grey">Home</a> <!-- will change the class name later -->
+      <a href="#work" class="button hover-teal">Projects</a>
+      <a href="#contact" class="button hover-brown">Contact</a>
+    </div>
+  </div>
+  <div class="half blue-grey">
+    <div>
+      <h1>About Me</h1>
+      <img src="photo_cv.jpg" class="circle" alt="Picture of me" style="width:50%">
+      <div style="text-align: left; padding: 16px;">
+        <p>Hi! I'm Zina. I love to learn, I like to code, and I am self-taught in many areas including coding, piano, and writing! Autonomy, curiosity, and my thirst for knowledge are my greatest assets.</p>
+        <p>Salut ! Je suis Zina. J'adore apprendre, j'aime coder, et je suis autodidacte dans de nombreux domaines, y compris la programmation, le piano, et l'écriture ! L'autonomie, la curiosité et la soif d'apprendre sont mes meilleurs atouts.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid: works and projects -->
+<div class="row">
+  <div class="half light-grey" id="work">
+    <div>
+      <h2>My Projects</h2>
+      <p>Some of my latest projects:</p>
+    </div>
+    <div class="row">
+      <div class="half">
+        <img src="fidget_test.png" alt="Picture of a 3D fidget spinner in blender" style="width:80%" height="425">
+      </div>
+    
+      <div class="half">
+        <img src="head_mirai.png" alt="Picture of a 3D figure of a head in blender" style="width:80%">
+      </div>
+      <div style="text-align: left; padding: 16px;">
+        <p> In short, I started by creating a base mesh and used Blender’s sculpting tools to shape and refine it, applying various brushes to add detail and texture. Fine-tuned the model by adjusting forms, smoothing surfaces, used symmetry and dynamic topology to achieve better intricacy and realism.</p>
+      </div>
+    <div class="row hide-small">
+      <div class="half">
+        <video width="1020" height="450" controls>
+            <source src="Manifesto.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div style="text-align: left; padding: 16px;">
+            <p> Here I used Photoshop, a bit of blender to test out a few tools and a text-to-speech AI for the voice. I used my voice at first but the AI was faster so I made the better choice.</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="half">
+          <img src="Logo_Temp.png" alt="Picture of a 3D fidget spinner in blender" style="width:80%" height="425">
+        </div>
+      
+        <div class="half">
+          <img src="jewel-design.png" alt="Picture of a 3D figure of a head in blender" style="width:80%">
+        </div>
+        <div style="text-align: left; padding: 16px;">
+          <p> The jewel was made using an AI, the prompts were along the lines of "vector art of four diamonds with different colors". The logo was made using Canva.</p>
+        </div>
+        <div class="row">
+          <div class="half">
+            <img src="not_snake.png" alt="mini-jeu" style="width:80%" height="425">
+          </div>
+        
+          <div class="half">
+            <img src="rly-not-snake.png" alt="rly-not-snake" style="width:80%">
+          </div>
+          <div style="text-align: left; padding: 16px;">
+            <p> Mini-jeu en C++ en utilisant l'IDE grapic. Le but est de toucher la balle le plus rapidement possible, sinon un strike s'affiche. Au bout de trois strikes c'est game over, sinon ça passe au niveau supérieur. Il y a trois niveaux et vous avez de moins en moins de temps pour toucher la balle.</p>
+          </div>
+        <div style="text-align: left; padding: 16px;">
+            <h2>Visual novel in the making : </h2>
+          </div>
+          <div class="row">
+            <div class="half">
+                <img src="idea.png" alt="lil draft of eventual UI" style="width: 80%;">
+            </div>
+          
+            <div class="half">
+              <img src="ui_early_ex.png" alt="ui draft" style="width:80%">
+            </div>
+
+            <div class="row">
+                <div class="half">
+                    <img src="tp-gone-wrong.jfif" alt="lil draft of eventual UI" style="width: 100%;">
+                </div>
+              
+                <div class="half">
+                  <img src="vn_jewel.png" alt="ui draft" style="width:50%">
+                </div>
+
+                <div class="row">
+                    <div class="half">
+                        <img src="ele_og.webp" alt="first draft of one of the datable characters" style="width: 80%;">
+                    </div>
+                  
+                    <div class="half">
+                      <img src="eleanor.webp" alt="wip of one of the datable characters" style="width:80%">
+                    </div>
+                    
+            
+        
+    </div><br>
+    <p>Work in progress...</p>
+  </div>
+  
+
+<!-- Third Grid: Swing By & Contact -->
+<div class="row" id="contact">
+  <div class="half dark-grey">
+    <div>
+      <h1>Swing By</h1>
+    </div>
+    <div>
+      <p>..for some tea , or maybe a fun discussion !</p>
+      <p>Currently in France</p>
+      <p>+33 640771100</p>
+      <p>zinatiar@gmail.com</p>
+    </div>
+  </div>
+  <div class="half teal">
+    <div style="padding: 16px;">
+      <h1>Contact</h1>
+      <p class="opacity">GET IN TOUCH</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="section">
+          <label>Name</label>
+          <input class="input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="section">
+          <label>Email</label>
+          <input class="input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="section">
+          <label>Message</label>
+          <input class="input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" style="background-color: #4682B4; color: white; padding: 8px 16px; border: none; cursor: pointer;">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
